@@ -5,7 +5,11 @@
 // print whether the user prefers a "Regular" or "Sugar-free" variety. If the preference is not set, default to "Regular".
 
 let userPreference = 'Sugar-free'; // Possible values: 'Regular', 'Sugar-free', or undefined
-console.log(`Would you like a ${userPreference} Monster Energy Drink`); // ALLOWS YOU TO SEE THE USERS PREFRERENCE
+// Ternary checks if userPreference is truthy, otherwise defaults to "Regular"
+let userCraving = userPreference ? userPreference : "Regular";
+
+console.log(userCraving); // Output: "Regular"
+
 
 // #### Challenge 2: Stock Check
 // You have a variable that tracks the number of Monster Energy cans left in the fridge. 
@@ -46,12 +50,9 @@ let currentHour = 22;
 // If it's between 7am and midnight (24-hour format), print "Unleash the beast!"
 // Otherwise, print "Better stick to water."
 
-if (currentHour < 7) {
-    console.log(`unleash the beast!`)
-} else if (currentHour > 24) {
-    console.log(`Better stick to water`)
-}
-
+// CHECKES FOR BOTH TIMERS 
+let cerfewTime = currentHour >= 7 && currentHour <24 ? "Unleash the beast!" : "Better stick to water."
+console.log(cerfewTime)
 
 
 

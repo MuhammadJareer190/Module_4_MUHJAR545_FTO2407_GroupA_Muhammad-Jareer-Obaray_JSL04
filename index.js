@@ -31,11 +31,8 @@ console.log(heartBpm);
 
 let currentTemp = 4; // Current temperature in °C
 //A TERNARY BASED OF TEMPERATURE + <=
-if (currentTemp <= 5) {
-    console.log(`Chilled to perfection!`);
-} else {
-    console.log(`Needs a cooler!`)
-}
+let mainTemp = currentTemp < 5 ? "Chilled to perfection!" : "Needs a cooler!"
+console.log(mainTemp)
 
 // #### Challenge 5: Late Night Coding Session
 // Determine if it's a good idea to have a Monster Energy drink based on the current hour.

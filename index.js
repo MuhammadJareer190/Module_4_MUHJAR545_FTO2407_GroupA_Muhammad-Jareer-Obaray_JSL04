@@ -15,17 +15,20 @@ let cansLeft = 3; // Any number of cans
 //A TERNARY WHERE IF THERES MORE OR LESS CANS
 if (cansLeft < 5) { 
     console.log(`Time to restock!`)
-} else if (cansLeft >= 5)
+} else if (cansLeft >= 5) {
 console.log(`We're stocked`);
-
+}
 
 // #### Challenge 3: Workout Intensity
 // Based on the current heart rate, determine if the user should drink a Monster Energy drink to boost their workout. 
 // If the heart rate is below 100 bpm, print "Boost needed!", otherwise, print "Energy levels are high!".
 
 let heartRate = 95; // Current heart rate in bpm
-console.log(`'}`);
-
+if (heartRate < 100) {
+    console.log(`Boost needed!`)
+} else {
+console.log(`Energy levels are high!`);
+}
 
 // #### Challenge 4: Temperature Suitability
 // Monster Energy drinks are best served cold. Given the current temperature, use a ternary to print "Chilled to perfection!" 

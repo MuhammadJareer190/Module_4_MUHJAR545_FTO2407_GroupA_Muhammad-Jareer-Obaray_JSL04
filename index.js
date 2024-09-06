@@ -24,6 +24,7 @@ console.log(`We're stocked`);
 // If the heart rate is below 100 bpm, print "Boost needed!", otherwise, print "Energy levels are high!".
 
 let heartRate = 95; // Current heart rate in bpm
+//A TERNARY BASED OF HEARTRATE
 if (heartRate < 100) {
     console.log(`Boost needed!`)
 } else {
@@ -35,8 +36,12 @@ console.log(`Energy levels are high!`);
 // if the temperature is below or equal to 5°C, or "Needs a cooler!" if above 5°C.
 
 let currentTemp = 4; // Current temperature in °C
-console.log(``);
-
+//A TERNARY BASED OF TEMPERATURE + <=
+if (currentTemp <= 5) {
+    console.log(`Chilled to perfection!`);
+} else {
+    console.log(`Needs a cooler!`)
+}
 
 // #### Challenge 5: Late Night Coding Session
 // Determine if it's a good idea to have a Monster Energy drink based on the current hour.
